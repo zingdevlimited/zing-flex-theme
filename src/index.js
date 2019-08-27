@@ -1,4 +1,4 @@
 import * as FlexPlugin from 'flex-plugin';
-import YelpIntegrationPlugin from './YelpIntegrationPlugin';
+import ZingThemePlugin from './ZingThemePlugin';
 
-FlexPlugin.loadPlugin(YelpIntegrationPlugin);
+FlexPlugin.loadPlugin(ZingThemePlugin);
