@@ -1,0 +1,13 @@
+[
+  {
+    "name": "YelpIntegrationPlugin",
+    "version": "0.0.0",
+    "class": "YelpIntegrationPlugin",
+    "requires": [
+      {
+        "@twilio/flex-ui": "^1"
+      }
+    ],
+    "src": "http://localhost:3000/plugin-yelp-integration.js"
+  }
+]
