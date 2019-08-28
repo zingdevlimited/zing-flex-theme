@@ -2,7 +2,7 @@
 // PLUGIN COMPONENT CODE
 // Adapted from base YelpIntegrationPlugin code from TwilioQuest
 // ***********************
-import { FlexPlugin } from 'flex-plugin';
+import { FlexPlugin, loadCSS } from 'flex-plugin';
 import React from 'react';
 import ZingTheme from "./theme/ZingTheme";
 
@@ -15,6 +15,8 @@ export default class FlexThemePlugin extends FlexPlugin {
 
   init(flex, manager) {
     //NOTE: This is useful https://www.twilio.com/docs/flex/overriding-themes-branding-and-styling
+
+    loadCSS('./fonts/font.css');
 
     //define const for theme basically need colorTheme: CustomTheme or whatever it's called
     //this can be imported above from css

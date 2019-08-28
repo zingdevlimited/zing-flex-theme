@@ -4,6 +4,11 @@
 const zingRed = "#c7001c";
 const zingSlate = "#2b3040";
 const zingGrey = "#4a4a4a";
+const zingMidGrey = "#b2b2b2";
+const zingLightGrey = "#dadada";
+const zingYolk = "#fab400";
+const zingDragonfruit = "#de007e";
+const zingAvocado = "#9bbd1e";
 const zingGradient = `linear-gradient(to bottom, ${zingSlate}, ${zingGrey})`;
 
 export default {
@@ -34,6 +39,12 @@ export default {
 
     //Overrides for individual component styling
     overrides: {
+        //Base container for all elements
+        RootContainer: {
+            fontFamily: "CeraPro-Regular",
+            //src: '/CeraPro-TypeMates/Webfonts/CeraPro-Regular.eot',
+        },
+
         //Overall Header
         MainHeader: {
             Container: {
@@ -44,10 +55,15 @@ export default {
         //Extendable side menu
         SideNav: {
             Container: {
-                background: zingSlate
+                background: zingGrey
             },
             Button: {
-                background: zingRed,
+                color: zingRed,
+                background: zingGrey,
+                //background: zingMidGrey,
+            },
+            Icon: {
+                color: "#FFFFFF",
             },
         },
 
@@ -71,19 +87,29 @@ export default {
             },
         },
 
+        IncomingTaskCanvas: {
+            AcceptTaskButton: {
+                background: zingAvocado,
+            },
+            RejectTaskButton: {
+                background: zingRed,
+            },
+        },
+
         //Task Header
         TaskCanvasHeader: {
             Container: {
                 background: zingSlate,
             },
             WrapupTaskButton: {
-                //If wrap up timner configured, will change to red
+                //If wrap up timer configured, will change to red
                 //just to emphasise urgency of resolution
-                background: "#FF0000",
+                background: zingRed,
             },
             EndTaskButton: {
                 //Made this green as it is an affirmative action
-                background: "#008037",
+                background: zingAvocado,
+                color: "#000000",
             },
         },
 
