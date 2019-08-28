@@ -24,5 +24,6 @@ export default class FlexThemePlugin extends FlexPlugin {
 
     //use manager.updateConfig(constDefinedJustUpThere); to apply the theme
     manager.updateConfig(config);
+    flex.MainHeader.defaultProps.logoUrl = "https://lh6.googleusercontent.com/DsUR5fM54xmMuNzufFnseC_MqIHLLhDqyoBLatE22IinqkFbHhUkNj2j22Q-2605wku_SlsGQmco1r6xOQEP=w944-h948-rw";
   }
 }
