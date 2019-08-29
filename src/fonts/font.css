@@ -1,29 +1,21 @@
+/*  
+  Creates font-face definitions for web hosted fonts
+    Uses woff and woff2 files, not eot, since only modern browsers
+    will use the flex instance.
+*/
+
 @font-face {
     font-family: "CeraPro-Regular";
-    src: url('https://drive.google.com/uc?id=1QwPVkpDajSCWJUW4h6J4JT8ETm__5V9v');
-    src: url('https://drive.google.com/uc?id=1QwPVkpDajSCWJUW4h6J4JT8ETm__5V9v?#iefix') format('embedded-opentype'),
-      url('https://drive.google.com/uc?id=1h-6TpTpO5K2_s0vDbWxDIKFqwMcNRZ21') format('woff2'),
-      url('https://drive.google.com/uc?id=1ORma2PYUbsVyQW6Yv2OLT7zWug7fulxU') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "CeraPro-Regular";
-    src: url('https://drive.google.com/uc?id=1QwPVkpDajSCWJUW4h6J4JT8ETm__5V9v');
-    src: url('https://drive.google.com/uc?id=1QwPVkpDajSCWJUW4h6J4JT8ETm__5V9v?#iefix') format('embedded-opentype'),
-      url('https://drive.google.com/uc?id=1h-6TpTpO5K2_s0vDbWxDIKFqwMcNRZ21') format('woff2'),
-      url('https://drive.google.com/uc?id=1ORma2PYUbsVyQW6Yv2OLT7zWug7fulxU') format('woff');
+    src: url('https://localhost:5001/fonts/CeraPro-Regular.woff2') format('woff2'),
+    url('https://localhost:5001/fonts/CeraPro-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: "CeraPro-Medium";
-    src: url('https://drive.google.com/uc?id=1lF06my5t3VyDfydtTSfG-hwDo_-14cMP');
-    src: url('https://drive.google.com/uc?id=1lF06my5t3VyDfydtTSfG-hwDo_-14cMP?#iefix') format('embedded-opentype'),
-      url('https://drive.google.com/uc?id=16ISHWguouIKJyg2h38C1jYKfICtRKKES') format('woff2'),
-      url('https://drive.google.com/uc?id=1gQm20VUPf-iGP4HG8NGeXpvIWAd6w1Ry') format('woff');
+    src: url('https://localhost:5001/fonts/CeraPro-Medium.woff2') format('woff2'),
+    url('https://localhost:5001/fonts/CeraPro-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }

@@ -6,9 +6,9 @@ import { FlexPlugin, loadCSS } from 'flex-plugin';
 import React from 'react';
 import ZingTheme from "./theme/ZingTheme";
 
-const PLUGIN_NAME = 'FlexThemePlugin';
+const PLUGIN_NAME = 'ZingThemePlugin';
 
-export default class FlexThemePlugin extends FlexPlugin {
+export default class ZingThemePlugin extends FlexPlugin {
   constructor() {
     super(PLUGIN_NAME);
   }
@@ -26,6 +26,11 @@ export default class FlexThemePlugin extends FlexPlugin {
 
     //use manager.updateConfig(constDefinedJustUpThere); to apply the theme
     manager.updateConfig(config);
-    flex.MainHeader.defaultProps.logoUrl = "https://lh6.googleusercontent.com/DsUR5fM54xmMuNzufFnseC_MqIHLLhDqyoBLatE22IinqkFbHhUkNj2j22Q-2605wku_SlsGQmco1r6xOQEP=w944-h948-rw";
+    flex.MainHeader.defaultProps.logoUrl = "https://doc-10-ac-docs.googleusercontent.com/docs/securesc/s95slau2cv85a89pgqtrp630rtgq6hns/fl1u775pk9mg9bsk3ahkb24g0m5splu8/1567072800000/06043530724723489829/17335709548727963608/18CMWWqEzwBjZwKGGpgbwPpDbdJJHEwQ4?h=13401462919179631825" /*"https://drive.google.com/uc?id=18CMWWqEzwBjZwKGGpgbwPpDbdJJHEwQ4"*/;
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'https://lh5.googleusercontent.com/rEBWxvzCT5TwD_WaSEk7tSMJfQrREy6Ie9e5RtS_7AwEUbkMbInihyJ3k7sE7dnT542cb_-kOtJbXHKZ31_X=w1920-h920';
+    document.getElementsByTagName('head')[0].appendChild(link);
   }
 }

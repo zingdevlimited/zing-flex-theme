@@ -10,7 +10,8 @@ const zingYolk = "#fab400";
 const zingDragonfruit = "#de007e";
 const zingAvocado = "#9bbd1e";
 const zingGradient = `linear-gradient(to bottom, ${zingSlate}, ${zingGrey})`;
-//Fonts
+
+//Define commonly used fonts
 const zingRegular = "CeraPro-Regular";
 const zingBold = "CeraPro-Medium";
 
@@ -36,6 +37,7 @@ export default {
         defaultButtonColor: zingRed, //how to configure button
         focusColor: "#990014", //dropdown outline
         focusGlow: zingRed, //dropdown outline
+        textColor: "rgba(255,255,255, 0.9)",
         //NOTE: This isn't officially documented, but can still be overridden. Might get deprecated eventually, though I doubt it.
         flexBlueColor: zingRed, //Used for some colouring by flex
     },
@@ -45,25 +47,26 @@ export default {
         //Base container for all elements
         RootContainer: {
             fontFamily: zingRegular,
-            //src: '/CeraPro-TypeMates/Webfonts/CeraPro-Regular.eot',
+            color: "rgba(255,255,255, 0.9)",
         },
 
         //Overall Header
         MainHeader: {
             Container: {
                 background: zingSlate,
+                color: "rgba(255,255,255, 0.9)",
             },
         },
 
         //Extendable side menu
         SideNav: {
             Container: {
-                background: zingGrey
+                background: zingGrey,
+                fontFamily: zingBold,
             },
             Button: {
                 color: zingRed,
                 background: zingGrey,
-                //background: zingMidGrey,
             },
             Icon: {
                 color: "#FFFFFF",
@@ -77,9 +80,11 @@ export default {
             },
             Panel1: {
                 background: `linear-gradient(to bottom, ${zingSlate} 10%, ${zingGrey})`,
+                color: "rgba(255,255,255, 0.9)",
             },
             Panel2: {
                 background: zingGradient,
+                color: "rgba(255,255,255, 0.9)",
             },
         },
 
@@ -88,6 +93,20 @@ export default {
             Container: {
                 background: zingGradient,
                 fontFamily: zingBold,
+                color: "rgba(255,255,255, 0.9)",
+            },
+        },
+
+        TaskList: {
+            Item: {
+                Buttons: {
+                    AcceptButton: {
+                        background: zingAvocado,
+                    },
+                    RejectButton: {
+                        background: zingRed,
+                    },
+                },
             },
         },
 
@@ -105,6 +124,7 @@ export default {
             Container: {
                 background: zingSlate,
                 fontFamily: zingBold,
+                color: "rgba(255,255,255, 0.9)",
             },
             WrapupTaskButton: {
                 //If wrap up timer configured, will change to red
@@ -124,6 +144,8 @@ export default {
         TaskInfoPanel: {
             Container: {
                 background: zingGradient,
+                color: "rgba(255,255,255, 0.9)",
+                fontFamily: zingRegular,
             }
         },
 
@@ -131,6 +153,8 @@ export default {
         TaskCanvas: {
             Container: {
                 background: zingSlate,
+                color: "rgba(255,255,255, 0.9)",
+                fontFamily: zingBold,
             },
         },
 
@@ -138,6 +162,7 @@ export default {
         CallCanvas: {
             Button: {
                 background: zingSlate,
+                color: "rgba(255,255,255, 0.9)",
             },
         },
 
@@ -147,6 +172,7 @@ export default {
                 Container: {
                     background: `linear-gradient(to bottom, ${zingSlate} 15%, ${zingGrey})`,
                     fontFamily: zingBold,
+                    color: "rgba(255,255,255, 0.9)",
                 },
             },
         },
@@ -155,10 +181,21 @@ export default {
         Supervisor: {
             Container: {
                 background: zingGradient,
+                color: "rgba(255,255,255, 0.9)",
             },
             TaskCanvas: {
                 Container: {
                     background: zingSlate,
+                    color: "rgba(255,255,255, 0.9)",
+                    fontFamily: zingBold,
+                },
+                Header: {
+                    fontFamily: zingBold,
+                },
+            },
+            WorkerCanvas: {
+                Header: {
+                    fontFamily: zingBold,
                 },
             },
         },
@@ -166,7 +203,9 @@ export default {
         //Empty Task Area
         NoTasksCanvas: {
             Container: {
-                background: zingGradient,
+                background: `linear-gradient(to bottom, ${zingSlate} 15%, ${zingGrey})`,
+                color: "rgba(255,255,255, 0.9)",
+                fontFamily: zingBold,
             },
         },
     }
