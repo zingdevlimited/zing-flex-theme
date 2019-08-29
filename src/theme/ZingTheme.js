@@ -10,6 +10,9 @@ const zingYolk = "#fab400";
 const zingDragonfruit = "#de007e";
 const zingAvocado = "#9bbd1e";
 const zingGradient = `linear-gradient(to bottom, ${zingSlate}, ${zingGrey})`;
+//Fonts
+const zingRegular = "CeraPro-Regular";
+const zingBold = "CeraPro-Medium";
 
 export default {
     //This is the name of the flex theme being built upon, GreyDark is default
@@ -41,7 +44,7 @@ export default {
     overrides: {
         //Base container for all elements
         RootContainer: {
-            fontFamily: "CeraPro-Regular",
+            fontFamily: zingRegular,
             //src: '/CeraPro-TypeMates/Webfonts/CeraPro-Regular.eot',
         },
 
@@ -84,6 +87,7 @@ export default {
         TaskDetailsPanel: {
             Container: {
                 background: zingGradient,
+                fontFamily: zingBold,
             },
         },
 
@@ -100,16 +104,19 @@ export default {
         TaskCanvasHeader: {
             Container: {
                 background: zingSlate,
+                fontFamily: zingBold,
             },
             WrapupTaskButton: {
                 //If wrap up timer configured, will change to red
                 //just to emphasise urgency of resolution
                 background: zingRed,
+                //fontFamily: zingBold, //Can't change font on button, only works inherited
             },
             EndTaskButton: {
                 //Made this green as it is an affirmative action
                 background: zingAvocado,
                 color: "#000000",
+                //fontFamily: zingBold, //Can't change font on button, only works inherited
             },
         },
 
@@ -139,6 +146,7 @@ export default {
             Placeholder: {
                 Container: {
                     background: `linear-gradient(to bottom, ${zingSlate} 15%, ${zingGrey})`,
+                    fontFamily: zingBold,
                 },
             },
         },
