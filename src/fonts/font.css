@@ -1,0 +1,21 @@
+/*  
+  Creates font-face definitions for web hosted fonts
+    Uses woff and woff2 files, not eot, since only modern browsers
+    will use the flex instance.
+*/
+
+@font-face {
+    font-family: "CeraPro-Regular";
+    src: url('https://localhost:5001/fonts/CeraPro-Regular.woff2') format('woff2'),
+    url('https://localhost:5001/fonts/CeraPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "CeraPro-Medium";
+    src: url('https://localhost:5001/fonts/CeraPro-Medium.woff2') format('woff2'),
+    url('https://localhost:5001/fonts/CeraPro-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
